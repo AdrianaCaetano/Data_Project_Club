@@ -47,19 +47,19 @@ The features that have the greater impact on the **Efficiency factor** are **Pre
 **But how the other high correlations may affect the efficiency?**
 
 To answer this question adn confirm the findings from the correlation matrix, I created a list with all correlations above +-0.7 and created plots to visualize how these pairs affect the efficiency of the system. 
-The graphs can clearly show that the system is affected when the following sensors reach the cited thresholds:
+The graphs can clearly show that the system is affected when the following sensors reach the following thresholds:
 
-    Cooling efficiency < 25 and Motor power W > 2800
-                            and Pressure bar 3 < 1
-    Cooling power < 1.75 and Motor power W > 2500
-                         and Pressure bar 3 < 1.5
-    Motor power > 2500 and Pressure bar 1 > 160
-                       and Pressure bar 2 > 130
-    Pressure bar 1 > 160 and Pressure bar 2 > 130
-    Vibration >= 0.8 and Pressure bar 3 < 1.5
+    - Motor power W > 2500
+    - Pressure bar 3 < 1
+    - Cooling power < 1.75
+    - Motor power > 2500 
+    - Pressure bar 1 > 160 
+    - Pressure bar 2 > 130
+    - Vibration >= 0.8 
  
-This is an example of a scatter plot showing how the correlated features affects the efficiency.
-![Cooling efficiency vs Motor power](images/cooling_efficiency_motor_power.png)
+Here are some examples of a scatter plot showing how the correlated features affects the efficiency.
+![Pressure bar 1 vs Pressure bar 2](images/pressure1_VS_pressure2.png)
+![Motor power vs Pressure 3](images/motor_power_VS_pressure3.png)
 
 **To conclude, besides monitoring the sensors Pressure bar 1,2,3, Motor power, and vibration, we should also monitor Cooling power to maintain an efficient system digging oil.**
 
