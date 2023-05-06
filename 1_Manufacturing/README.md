@@ -23,6 +23,8 @@ The original dataset is from [UCI Machine Learning Repository](https://archive.i
 
 ### Analysis
 
+The data analysis was done on Google Colab using Python with Pandas, Matplotlib, Seaborn, and Skit-learn. The notebook is in the 1_Manufacturing folder.
+
 After importing and analysing the data, I created some graphs to understnd how each feature behaved over time
 ![Plots of features](images/time_cool_motor_vol.png)
 ![Plots of features](images/temp_vibr_effic.png)
@@ -31,7 +33,7 @@ After importing and analysing the data, I created some graphs to understnd how e
 Then I created a coorelation matrix to check how features correlate to each other
 ![Correlation matrix](images/correlation_matrix.png)
 
-Then, I created a list to check correlations above +-0.7 to check how these pairs affect the efficiency of the system. the system is affect when the following sensors reach the cited thresholds at the same time:
+Then, I created a list to check correlations above +-0.7 to check how these pairs affect the efficiency of the system. The system is affect when the following sensors reach the cited thresholds at the same time:
 
     Cooling efficiency < 25 and Motor power W > 2800
                             and Pressure bar 3 < 1
@@ -42,7 +44,12 @@ Then, I created a list to check correlations above +-0.7 to check how these pair
     Pressure bar 1 > 160 and Pressure bar 2 > 130
     Vibration >= 0.8 and Pressure bar 3 < 1.5
  
-![Cooling efficiency vs Motor power](images/cooling_efficiency_VS_motor_power.png)
+This is an example of a scatter plot showing how the correlated features affects the efficiency.
+![Cooling efficiency vs Motor power](images/cooling_efficiency_motor_power.png)
+
+### Dashboard
+
+After the analysis, a dashboard was created to monitor the system. 
 
 ### References
 
