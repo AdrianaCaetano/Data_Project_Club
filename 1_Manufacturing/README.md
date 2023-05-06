@@ -44,6 +44,10 @@ also there is a perfect negative correlation between:
 
 The features that have the greater impact on the **Efficiency factor** are **Pressure bar 1 and 2**, with a negative correlation greater than 0.7, followed by **Motor power**. With a small negative correlation of  0.34, **Vibration** also has an impact on the efficiency of the system.  **Pressure bar 3** has a positive correlation greater than 0.5. All other sensors have a close to zero correlation with Efficiency factor, which translates to not having a significant impact on the overall efficiency.
 
+To confirm the relationships, I plotted the linear regression of all sensors against Efficiency factor. It is clear when a sensor has an impact on efficiency when we compare the results. 
+![Linear regression efficiency vs motor power](images/motor_power_VS_efficiency.png)
+![Linear regression efficiency vs cooling power](images/cooling_power_VS_efficiency.png)
+
 **But how the other high correlations may affect the efficiency?**
 
 To answer this question adn confirm the findings from the correlation matrix, I created a list with all correlations above +-0.7 and created plots to visualize how these pairs affect the efficiency of the system. 
