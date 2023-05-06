@@ -25,28 +25,28 @@ The original dataset is from [UCI Machine Learning Repository](https://archive.i
 
 The data analysis was done on Google Colab using Python with Pandas, Matplotlib, Seaborn, and Skit-learn. The notebook is in the 1_Manufacturing folder.
 
-After importing and analysing the data, I created some graphs to understnd how each feature behaved over time
+The data was pre-processed, and all sensor's information are compiled in one file with no missing values. After importing I checked the data types and stastistics of the features, then I created some graphs to understand how each feature behaved over time.
 ![Plots of features](images/time_cool_motor_vol.png)
 ![Plots of features](images/temp_vibr_effic.png)
 ![Plots of features](images/pressure.png)
 
-Then I created a coorelation matrix to check how features correlate to each other
+
+In the correlation matrix we can check how the features correlate to each other:
 ![Correlation matrix](images/correlation_matrix.png)
 
-Analysing the matrix, we can note that there is perfect positive correlation between :
+Analysing the matrix, we can note that there is a perfect positive correlation between :
 - Temperature 1,2,3 and 4
-- pressure bar 1 and 2
+- Pressure bar 1 and 2
 - Pressure bar 5 and 6 
 
 also there is a perfect negative correlation between:
-- Volume flow l/min 2 and temperature 3
+- Volume flow l/min 2 and Temperature 3
 
-And the features that have the greater impact on the Effective factor are:
-- pressure bar 1 and 2
+The features that have the greater impact on the **Efficiency factor** are **Pressure bar 1 and 2**, with a negative correlation greater than 0.7, followed by **Motor power** and **Pressure bar 3**, both with a negative correlation greater than 0.5. With a small negative correlation of  0.34, **Vibration** also has an impact on the efficiency of the system. All other sensors have a close to zero correlation with Efficiency factor, which translates to not having a significant impact on the overall efficiency.
 
-**But how the other correlations may affect the efficiency?**
+**But how the other high correlations may affect the efficiency?**
 
-To answeer this question, I created a list with all correlations above +-0.7 and created plots to visualize how these pairs affect the efficiency of the system. 
+To answer this question adn confirm the findings from the correlation matrix, I created a list with all correlations above +-0.7 and created plots to visualize how these pairs affect the efficiency of the system. 
 The graphs can clearly show that the system is affected when the following sensors reach the cited thresholds:
 
     Cooling efficiency < 25 and Motor power W > 2800
@@ -61,6 +61,7 @@ The graphs can clearly show that the system is affected when the following senso
 This is an example of a scatter plot showing how the correlated features affects the efficiency.
 ![Cooling efficiency vs Motor power](images/cooling_efficiency_motor_power.png)
 
+**To conclude, besides monitoring the sensors Pressure bar 1,2,3, Motor power, and vibration, we should also monitor Cooling power to maintain an efficient system digging oil.**
 
 ### Dashboard
 
