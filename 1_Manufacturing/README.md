@@ -33,7 +33,21 @@ After importing and analysing the data, I created some graphs to understnd how e
 Then I created a coorelation matrix to check how features correlate to each other
 ![Correlation matrix](images/correlation_matrix.png)
 
-Then, I created a list to check correlations above +-0.7 to check how these pairs affect the efficiency of the system. The system is affect when the following sensors reach the cited thresholds at the same time:
+Analysing the matrix, we can note that there is perfect positive correlation between :
+- Temperature 1,2,3 and 4
+- pressure bar 1 and 2
+- Pressure bar 5 and 6 
+
+also there is a perfect negative correlation between:
+- Volume flow l/min 2 and temperature 3
+
+And the features that have the greater impact on the Effective factor are:
+- pressure bar 1 and 2
+
+**But how the other correlations may affect the efficiency?**
+
+To answeer this question, I created a list with all correlations above +-0.7 and created plots to visualize how these pairs affect the efficiency of the system. 
+The graphs can clearly show that the system is affected when the following sensors reach the cited thresholds:
 
     Cooling efficiency < 25 and Motor power W > 2800
                             and Pressure bar 3 < 1
@@ -46,6 +60,7 @@ Then, I created a list to check correlations above +-0.7 to check how these pair
  
 This is an example of a scatter plot showing how the correlated features affects the efficiency.
 ![Cooling efficiency vs Motor power](images/cooling_efficiency_motor_power.png)
+
 
 ### Dashboard
 
