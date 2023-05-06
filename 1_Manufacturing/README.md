@@ -42,7 +42,7 @@ Analysing the matrix, we can note that there is a perfect positive correlation b
 also there is a perfect negative correlation between:
 - Volume flow l/min 2 and Temperature 3
 
-The features that have the greater impact on the **Efficiency factor** are **Pressure bar 1 and 2**, with a negative correlation greater than 0.7, followed by **Motor power** and **Pressure bar 3**, both with a negative correlation greater than 0.5. With a small negative correlation of  0.34, **Vibration** also has an impact on the efficiency of the system. All other sensors have a close to zero correlation with Efficiency factor, which translates to not having a significant impact on the overall efficiency.
+The features that have the greater impact on the **Efficiency factor** are **Pressure bar 1 and 2**, with a negative correlation greater than 0.7, followed by **Motor power**. With a small negative correlation of  0.34, **Vibration** also has an impact on the efficiency of the system.  **Pressure bar 3** has a positive correlation greater than 0.5. All other sensors have a close to zero correlation with Efficiency factor, which translates to not having a significant impact on the overall efficiency.
 
 **But how the other high correlations may affect the efficiency?**
 
@@ -60,7 +60,7 @@ Here are some examples of a scatter plot showing how the correlated features aff
 ![Pressure bar 1 vs Pressure bar 2](images/pressure1_VS_pressure2.png)
 ![Vibration vs Pressure 3](images/vibration_VS_pressure3.png)
 
-**To conclude, besides monitoring the sensors Pressure bar 1,2,3, Motor power, and vibration, we should also monitor Cooling power to maintain an efficient system digging oil.**
+**To conclude, to maintain an efficient system it is crucial to monitor the sensors Pressure bar 1,2,3, Motor power, and vibration.**
 
 ### Dashboard
 
