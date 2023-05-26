@@ -32,7 +32,7 @@ The data was pre-processed, and all sensor's information are compiled in one fil
 
 
 In the correlation matrix we can check how the features correlate to each other:
-![Correlation matrix](images/correlation_matrix.png)
+![Correlation matrix](images/correlation_matrix_sensors_controls.png)
 
 Analysing the matrix, we can note that there is a perfect positive correlation between :
 - Temperature 1,2,3 and 4
@@ -68,7 +68,9 @@ Here are some examples of a scatter plot showing how the correlated features aff
 
 ### Dashboard
 
-After the analysis, a dashboard was created to monitor the system. 
+After the analysis, an [interactive dashboard](https://public.tableau.com/views/EnergyMobil/Dashboard4?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link) was created to monitor the system. 
+
+![Monitoring Dashboard](images/dashboard.png)
 
 ### References
 
