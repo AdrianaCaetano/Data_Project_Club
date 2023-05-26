@@ -1,8 +1,8 @@
 # MANUFACTURING OIL RIG
 
-The first project is for an Industrial Manufacturing Company, which ficticious name is EnergyMobil.
+This project is for an Industrial Manufacturing Company, which ficticious name is EnergyMobil.
 
-Your role is to provide value to the company using the provided data to run the manufacturing plant more efficiently. 
+The goal is to provide value to the company using the provided data to run the manufacturing plant more efficiently. 
 
 ### Data Analyst role
 Create a manufacturing monitoring dasboard tht allows management to understand the manufacturing process in more detail.
